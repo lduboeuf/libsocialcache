@@ -1,0 +1,3 @@
+usr/include/socialcache/*.h
+usr/lib/*/libsocialcache.so
+usr/lib/*/pkgconfig/socialcache.pc

@@ -1,0 +1,23 @@
+Source: libsocialcache
+Section: libs
+Priority: optional
+Maintainer: [Votre nom] <votre.email@example.com>
+Build-Depends: debhelper (>= 9), qtbase5-dev, qtdeclarative5-dev, qttools5-dev-tools, pkg-config, libbuteosyncfw5-dev
+Standards-Version: 3.9.8
+Homepage: https://github.com/sailfishos/libsocialcache
+Vcs-Git: https://github.com/sailfishos/libsocialcache.git
+Vcs-Browser: https://github.com/sailfishos/libsocialcache
+
+Package: libsocialcache
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5sql5-sqlite
+Description: A library that manages data from social networks
+ libsocialcache is a library that manages data from social networks. It also provides higher level models with a QML plugin.
+
+Package: libsocialcache-dev
+Section: libdevel
+Architecture: any
+Depends: libsocialcache (= ${binary:Version}), ${misc:Depends}
+Description: Development files for libsocialcache
+ This package contains development files for libsocialcache.
+

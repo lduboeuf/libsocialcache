@@ -54,7 +54,8 @@ This package contains unit tests for the libsocialcache library.
 %setup -q -n %{name}-%{version}
 
 %build
-%qmake5 "VERSION=%{version}"
+%qmake5 "VERSION=%{version}" \
+    "CONFIG+=qml"
 %make_build
 
 %install

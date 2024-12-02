@@ -1,3 +1,8 @@
 TEMPLATE = subdirs
-SUBDIRS = lib qml
-qml.depends = lib
+SUBDIRS = lib
+
+CONFIG(qml): {
+    SUBDIRS += qml
+    qml.depends = lib
+}
+
